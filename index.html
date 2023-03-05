@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSSITON</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: gray;
+      }
+      .relative {
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+        position: relative;
+        margin: 100px auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgb(189, 185, 185),
+          -5px -5px 15px rgb(245, 245, 245);
+      }
+      .absolute-1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top: 120px;
+        left: 150px;
+        z-index: 3;
+      }
+      .absolute-2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(235, 235, 64);
+        position: absolute;
+        top: 165px;
+        left: 185px;
+        z-index: 2;
+      }
+      .absolute-3 {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        position: absolute;
+        top: 215px;
+        left: 225px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative">
+      <div class="absolute-1"></div>
+      <div class="absolute-2"></div>
+      <div class="absolute-3"></div>
+    </div>
+  </body>
+</html>
